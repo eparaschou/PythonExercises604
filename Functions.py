@@ -133,6 +133,61 @@ print (sum)
 sum = add_numbers(2, 5, 3)
 print (sum)
 
+#Ex 4
+# Write a function that takes length,breadth,and cost per square unit and calculate the cost to paint a rectangle
+# use default value of 20 for cost_per_sqr_unit
+# area = length * breadth
+# cost = cost_per_sqr_unit * area
+# in the main program use input to accept length,breadth,and cost per square unit
+# call the function and pass the three values to the function
+# print the return with the appropriate text
+
+def program(length,breadth,cost_per_sqr_unit=20):
+    area = length * breadth
+    cost = cost_per_sqr_unit * area
+    return cost
+
+length = int(input("Enter length: "))
+breadth = int(input("Enter breadth: "))
+cost_per_sqr_unit = int(input("Enter cost per unit: "))
+
+print(length, breadth, cost_per_sqr_unit)
+
+paint_cost = program(length, breadth, cost_per_sqr_unit)
+
+print(f"The cost to paint a rectangle with length {length} and breadth {breadth} is ${paint_cost:.2f}.")
 
 
+# Ex5
+# write a function that takes a number and returns the factorial of that number. Use input to get the number
+# factorial of 4 = 4*3*2*1
 
+def factorial(num):
+    if num<0:
+        return 0
+    elif num == 0 or num ==1:
+        return 1
+    else:
+        fact = 1
+        while (num > 1):
+            fact *= num
+            num -= 1
+        return fact
+num = int(input("Enter number: "))
+print("Factorial of", num, "is", factorial(num))
+
+# using built in function
+import math
+def factorial(n):
+    return(math.factorial(n))
+num = int(input("Enter number: "))
+print("Factorial of", num, "is",
+      factorial(num))
+
+# prof's solution
+def factorial2(num):
+    fact = 1
+    for i in range(1, num+1):
+        fact *= i
+    return fact
+print(factorial2(4))
