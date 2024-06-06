@@ -1,1 +1,1 @@
-# Wine Quality Machine Learning Project in Python
+# Python Exercises Class 604
