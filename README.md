@@ -2,6 +2,7 @@
 This repository includes Python exercises from Python 604. 
 I explored:
 - Loops
+- Functions
 - Booleans
 - Collections & Dictionaries
 - Lists
