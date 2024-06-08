@@ -297,3 +297,50 @@ while True:
     n += 1
 
 print("the number greater than 10000 is:", next_term, ", the position in the series",n)
+
+# while loop
+target = int(input())
+n = int(input())
+step = 4
+while n >= target:
+    print(n * 2)
+    n -= step
+
+# while loop
+total_product = 1
+curr_value = int(input())
+while curr_value > 0:
+    total_product = total_product * curr_value
+    curr_value = int(input())
+print(f'Product: {total_product}')
+
+# Write a loop that iterates while input_num is not equal to 35.
+# in each iteration print 'Still waiting for 35'.
+# in each iteration Read integer input_num from input.
+
+input_num = int(input())
+
+while input_num != 35:
+    print( 'Still waiting for 35')
+    input_num = int(input())
+
+print('Got 35!')
+
+# reverse numbers
+numbers = [3, 8, 6, 4]
+for number in reversed(numbers):
+    print(number)
+
+# for loop
+cities = {
+    'Toronto': 982,
+    'Chicago': 584,
+    'Paris': 438,
+}
+best = ''
+distance = 0
+for city in cities:
+    if cities[city] > distance:
+        best = city
+        distance = cities[city]
+print(best, distance)
