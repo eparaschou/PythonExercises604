@@ -344,3 +344,28 @@ for city in cities:
         best = city
         distance = cities[city]
 print(best, distance)
+
+# enter any number between 100 and 500. keep asking the user to enter a correct input until he/she enters the number within a given range.
+num = int(input("Enter a number between 100 and 500"))
+while num < 100 or num > 500:
+    print("Incorrect number; Try again.")
+    num = int(input("Enter a number"))
+else:
+    print(f'Given Number is correct {num}')
+
+# Write a Python program that prints all the numbers from 0 to 6 except 3 and 6.
+num = 0
+for num in range(0,7):
+    if num == 3 or num == 6:
+        continue
+    print(num, end=' ')
+print("\n")
+
+# get the Fibonacci series between 0 and 50.
+# Every next number is found by adding up the two numbers before it.
+x,y = 0,1
+while y < 50:
+    print(y)
+    x,y = y, x+y
+
+
