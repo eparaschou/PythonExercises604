@@ -176,7 +176,7 @@ def factorial(num):
 num = int(input("Enter number: "))
 print("Factorial of", num, "is", factorial(num))
 
-# using built in function
+# using built-in function
 import math
 def factorial(n):
     return(math.factorial(n))
