@@ -190,4 +190,77 @@ def factorial2(num):
     for i in range(1, num+1):
         fact *= i
     return fact
-print(factorial2(4))
+number = int(input("Enter the number for factorial here: "))
+factorial_of_num = factorial2(number)
+print(f"The factorial of {number} is {factorial_of_num}.")
+
+
+# find the largest number out of 3 numbers
+def largestNumber(a,b,c):
+    if a>b and a>c:
+        return a
+    elif b>a and b>c:
+        return b
+    else:
+        return c
+num1 = int(input("enter first number"))
+num2 = int(input("enter second number"))
+num3 = int(input("enter third number"))
+print("The largest of the three numbers is", largestNumber(num1,num2, num3))
+
+# write a function day_name that converts an integer number 0 to 6 into the name of a day.
+# assume day 0 is "Sunday"
+# return None if the arguments to the function are not valid
+# print (day_name(3))  would print "Wednesday"
+# print (day_name(6)) would print "Saturday"
+# print (day_name(42)) would print “None”
+
+def day_name(day):
+    for i in range(0,7):
+        if day == 0:
+            return 'Sunday'
+        elif day == 1:
+            return 'Monday'
+        elif day == 2:
+            return 'Tuesday'
+        elif day == 3:
+            return 'Wednesday'
+        elif day == 4:
+            return 'Thursday'
+        elif day == 5:
+            return 'Friday'
+        elif day == 6:
+            return 'Saturday'
+        else:
+            return None
+print (day_name(3))
+print (day_name(6))
+print (day_name(42))
+
+
+# other way for the exercise above
+def day_name(day):
+    if day in range(0,7):
+        return ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"][day]
+    return None
+print(day_name(3))
+print(day_name(6))
+print(day_name(42))
+
+# Ex: define a function which counts vowels (a,e,i,o,u) in a word/string.
+# example: Narendra - has 3 vowels
+def count_vowels(vowel):
+    vowels = 'aeiouAEIOU'
+    count = 0
+    for i in vowel:
+        if i in vowels:
+            count += 1
+    return count
+
+word = input("Enter a word: ")
+print(f"{word} - has {count_vowels(word)} vowels")
+
+
+
+
+
