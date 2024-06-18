@@ -8,6 +8,7 @@ I explored:
 - Lists
 - Tuples
 - Variables
+- Graphs using Matplot Lib
 
 To develop my skills even further I worked on a Machine Learning project using Python.
-It assess wine quality. 
+It assesses wine quality data and utilizes machine learning to predict the wine quality. 
